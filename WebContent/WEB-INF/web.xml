@@ -22,6 +22,10 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/classes/nla-servlet.xml</param-value>
 		</init-param>
+		<init-param>
+			<param-name>throwExceptionIfNoHandlerFound</param-name>
+			<param-value>true</param-value>
+		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
@@ -42,5 +46,7 @@
 		<param-name>spring.profiles.active</param-name>
 		<param-value>production</param-value>
 	</context-param>
+
+	<!-- <error-page> <error-code>404</error-code> <location>/</location> </error-page> -->
 
 </web-app>

@@ -25,7 +25,7 @@ import au.com.nla.model.Person;
 @ContextConfiguration(locations = { "file:src/test/java/au/com/nla/config/text-context.xml",
 		"file:WebContent/WEB-INF/classes/bean-context.xml", "file:WebContent/WEB-INF/classes/nla-servlet.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
-public class BookDaoTests {
+public class BookDaoTest {
 
 	@PersistenceContext
 	private EntityManager entityManager;
